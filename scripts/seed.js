@@ -1,4 +1,4 @@
-// Usage: node src/scripts/seed.js   (needs MONGO_URI; refuses to run in production)
+// Usage: node scripts/seed.js   (needs MONGODB_URI; refuses to run in production; WIPES users, notes and posts)
 require('dotenv').config();
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
