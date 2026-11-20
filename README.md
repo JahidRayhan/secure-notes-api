@@ -63,4 +63,3 @@ Verify: `node scripts/explainInterests.js chess` and `mongosh "<uri>" --file scr
 - **Aggregations take plain values.** `aggregate()` does not cast, so ids are converted to `ObjectId` and the interest filter is validated as a string (an object such as `?interest[$ne]=x` is a 400).
 - **Auth.** bcrypt hashing, 1h JWT, user re-loaded from the DB on every request (deleted users and role changes apply immediately), constant-time-ish login (dummy hash), failed-login rate limit, helmet, strict CORS allow-list.
 
-<- Reports Hub: run every report. Try the Stock Ledger ( pick a product ) , Customer Statement, Customer Due ( Ageing ) and Stock Valuation with an earlier As
